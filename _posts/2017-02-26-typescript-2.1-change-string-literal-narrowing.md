@@ -31,11 +31,11 @@ export class SearchCompleteAction implements Action {
 }
 
 ...
-[/code]
+```
 
 followed by the reducer code:
 
-[code]
+```typescript
 
  switch (action.type) {
     case book.ActionTypes.SEARCH_COMPLETE: {
