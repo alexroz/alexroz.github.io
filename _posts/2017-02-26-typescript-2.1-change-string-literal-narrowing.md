@@ -28,14 +28,12 @@ export class SearchCompleteAction implements Action {
 
   constructor(public payload: Book[]) { }
 }
-
 ...
 ```
 
 followed by the reducer code:
 
 ```typescript
-
  switch (action.type) {
     case book.ActionTypes.SEARCH_COMPLETE: {
       const books = action.payload;
@@ -46,7 +44,7 @@ followed by the reducer code:
 
 In TS 2.0, the action.payload type is narrowed to Book[] based on switch(action.type). However, in 2.1 the rules have changed.
 
-Everything is well described here: ngrx app issue: https://github.com/ngrx/example-app/issues/93 and related TS issue: https://github.com/Microsoft/TypeScript/issues/2214#issuecomment-268855988
+Everything is well described here in the [ngrx app issue](https://github.com/ngrx/example-app/issues/93) and the [related TS issue](https://github.com/Microsoft/TypeScript/issues/2214#issuecomment-268855988).
 
 The TS 2.1 code requires a couple of changes:
 
@@ -72,7 +70,6 @@ export class SearchCompleteAction implements Action {
 
   constructor(public payload: Book[]) { }
 }
-
 ...
 ```
 This seems like quite a drastic change for a point release.
