@@ -1,3 +1,8 @@
+---
+layout: default
+title: Alex Rozycki
+---
+
 <div id="home">
   <h1>Blog Posts</h1>
   <ul class="posts">
