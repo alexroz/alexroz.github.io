@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Change to string literal types and type narrowing in TypeScript 2.1
 ---
 
